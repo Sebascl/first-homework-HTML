@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sebastián Ladino Cano">
+    <meta name="keywords" content="html, hoja de vida, curriculum, example">
+    <meta name="description" content="Tarea 1 - HTML - Programación 4">
+    <title>educacion</title>
+</head>
+
+<body>
+
+    <img src="Logo.png" title="LOGO" width="350" />
+
+    <h1>
+        Hoja De Vida
+    </h1>
+
+    <li><a href="index.html">INICIO</a></li>
+    <li><a href="educacion.html">EDUCACIÓN</a></li>
+    <li><a href="experiencia.html">EXPERIENCIA</a></li>
+
+    <h2>Educación</h2>
+    <table border="3">
+        <thead>
+            <tr>
+                <th>Año</th>
+                <th>Institución</th>
+                <th>Lugar</th>
+                <th>¿Culminó?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2007-2012</td>
+                <td>L.A.N.S</td>
+                <td>Primaria</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>2013-2018</td>
+                <td>L.A.N.S</td>
+                <td>Secundaria</td>
+                <td>Si</td>
+            </tr>
+            <tr>
+                <td>2019-2020</td>
+                <td>COLOMBO</td>
+                <td>Estadio</td>
+                <td>Si</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Agregar Educación</h2>
+    <form action="/action.php" method="post">
+        Año: <input max="2070" min="2000" name="año" step="1" type="number" value="2016" />
+        <br /><br />
+        Institución: <input name="Institución" type="text" required="required" />
+        <br /><br />
+        Lugar: <textarea cols="25" name="comments" rows="7"></textarea>
+        <br /><br />
+        ¿Culminó?: <input checked="checked" name="culmino" type="radio" />
+        Si <input name="culmino" type="radio" checked="checked" /> No
+        <br /><br />
+        <input type="submit" value="Submit" />
+    </form>
+    <br /><br />
+    <ui>
+        <li>Email: sebasladino13@hotmail.com</li>
+        <li>Teléfono: 311-743-7250</li>
+        <li>Dirección: Cra 23 bis #73-123 Barrio Milan - Pueblito Español </li>
+        <li>Ciudad: Manizales - Caldas</li>
+    </ui>
+
+</body>
+
+</html>
